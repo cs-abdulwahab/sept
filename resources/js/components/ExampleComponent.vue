@@ -1,0 +1,33 @@
+<template>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card card-primary">
+                    <div class="card-header"></div>
+                    This is a header. {{title}}
+                    <div class="card-body">
+                        I'm an example component body .
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+<script>
+    export default {
+
+        props: {
+
+            title: {
+                type:String,
+                required:true,
+            },
+        },
+
+        mounted() {
+            console.log('Component mounted.')
+        }
+    }
+</script>
