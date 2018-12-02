@@ -1,10 +1,4 @@
-
-
-function test(){
-
-
-
+function test() {
 
 }
-
 

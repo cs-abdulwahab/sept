@@ -31,6 +31,16 @@ function average(a, b) {
 
 console.log("Average ====== = " + average(100, 2));
 
+var vm1 = new Vue({
+
+    el: "#myapp",
+    data: {
+        message: 'Hello Vue from Sample File  !!!!!!!!!!'
+    },
+
+});
+
+
 
 /*
 
@@ -68,14 +78,7 @@ Vue.component('base-input', {
 Vue.component('sample-component', require('./components/SampleComponent.vue'));
 
 
-var vm1 = new Vue({
 
-    el: "#myapp",
-    data: {
-        message: 'Hello Vue!'
-    },
-
-});
 
 
 /*

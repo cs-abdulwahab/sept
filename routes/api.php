@@ -22,8 +22,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 // Route::apiResource('customers', 'CustomerController');
 
 
+Route::post('/', function (Request $request) {
 
+    $path = $request->file('img')->store('avatars');
 
-
-
+    return $path;
+});
 

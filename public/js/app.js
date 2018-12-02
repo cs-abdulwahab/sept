@@ -13891,13 +13891,11 @@ module.exports = __webpack_require__(49);
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
 __webpack_require__(13);
 
 window.Vue = __webpack_require__(36);
 
 __webpack_require__(39);
-
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -13905,15 +13903,21 @@ __webpack_require__(39);
  */
 
 /*import 'v-slim-dialog/dist/v-slim-dialog.css'*/
+
 /*import SlimDialog from 'v-slim-dialog'*/
 
-function average(a, b) {
 
-    return (a + b) / 2;
+function average(a, b) {
+  return (a + b) / 2;
 }
 
 console.log("Average ====== = " + average(100, 2));
-
+var vm1 = new Vue({
+  el: "#myapp",
+  data: {
+    message: 'Hello Vue from Sample File  !!!!!!!!!!'
+  }
+});
 /*
 
 Vue.use(SlimDialog);
@@ -13923,6 +13927,7 @@ import VeeValidate from 'vee-validate';
 
 Vue.use(VeeValidate);
 */
+
 /*
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
@@ -13948,7 +13953,6 @@ Vue.component('base-input', {
 */
 
 Vue.component('sample-component', __webpack_require__(40));
-
 /*
 
 Vue.component('alert', {
@@ -14102,10 +14106,8 @@ var myapp = new Vue({
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-
 window._ = __webpack_require__(14);
 window.Popper = __webpack_require__(3).default;
-
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
  * for JavaScript based Bootstrap features such as modals and tabs. This
@@ -14114,19 +14116,18 @@ window.Popper = __webpack_require__(3).default;
 
 try {
   window.$ = window.jQuery = __webpack_require__(4);
+
   __webpack_require__(16);
 } catch (e) {}
-
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
+
 window.axios = __webpack_require__(17);
-
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-
 /**
  * Next we will register the CSRF Token as a common header with Axios so that
  * all outgoing HTTP requests automatically have it attached. This is just
@@ -14140,17 +14141,13 @@ if (token) {
 } else {
   console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
-
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
  * allows your team to easily build robust real-time web applications.
  */
-
 // import Echo from 'laravel-echo'
-
 // window.Pusher = require('pusher-js');
-
 // window.Echo = new Echo({
 //     broadcaster: 'pusher',
 //     key: process.env.MIX_PUSHER_APP_KEY,
@@ -47372,10 +47369,6 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* 39 */
 /***/ (function(module, exports) {
 
-
-
-console.log('this is the sample js file ');
-
 function test() {}
 
 /***/ }),
@@ -47932,15 +47925,13 @@ module.exports = function normalizeComponent (
 //
 //
 //
-
-
 module.exports = {
-    data: function data() {
-        return {
-            greeting: 'Hello',
-            msg: 'sample message'
-        };
-    }
+  data: function data() {
+    return {
+      greeting: 'Hello',
+      msg: 'sample message'
+    };
+  }
 };
 
 /***/ }),
