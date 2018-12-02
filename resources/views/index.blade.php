@@ -24,8 +24,12 @@
     <link href="{{asset('css/starter-template.css')}}" rel="stylesheet">
 
     <!-- Scripts -->
+
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/countries.js') }}" defer></script>
+
+
+
 </head>
 
 <body>
@@ -67,7 +71,9 @@
 
 <main role="main" class="container">
 
-    <div class="row">
+    <div id="myapp" class="row">
+
+        @{{message}}
 
         <div class="input-group mb-3" class="col-3">
             <div class="input-group-prepend">
@@ -83,7 +89,10 @@
 
     </div>
 
-</main><!-- /.container -->
+</main>
+
+
+<!-- /.container -->
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
@@ -105,6 +114,7 @@
 I guess Bootstrap was already added
 
 <script src="../../dist/js/bootstrap.min.js"></script>--}}
+
 
 </body>
 </html>

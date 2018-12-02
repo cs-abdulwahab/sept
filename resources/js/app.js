@@ -19,6 +19,7 @@ require('./sample');
  */
 
 /*import 'v-slim-dialog/dist/v-slim-dialog.css'*/
+
 /*import SlimDialog from 'v-slim-dialog'*/
 
 
@@ -65,6 +66,16 @@ Vue.component('base-input', {
 */
 
 Vue.component('sample-component', require('./components/SampleComponent.vue'));
+
+
+var vm1 = new Vue({
+
+    el: "#myapp",
+    data: {
+        message: 'Hello Vue!'
+    },
+
+});
 
 
 /*
