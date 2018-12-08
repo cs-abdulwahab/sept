@@ -16,6 +16,11 @@ Route::get('/home', function () {
     return view('sb-admin.index');
 });
 
+Route::get('/login', function () {
+
+    return view('sb-admin.login');
+});
+
 
 Route::get('/', function () {
 
