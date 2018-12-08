@@ -12,6 +12,14 @@ window.Vue = require('vue');
 
 require('./sample');
 
+test();
+
+function pun() {
+
+    console.log('this is the pun function from app.js')
+}
+
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -29,6 +37,13 @@ function average(a, b) {
 
 }
 
+
+function sampletest() {
+
+
+}
+
+
 console.log("Average ====== = " + average(100, 2));
 
 var vm1 = new Vue({
@@ -39,7 +54,6 @@ var vm1 = new Vue({
     },
 
 });
-
 
 
 /*
@@ -76,9 +90,6 @@ Vue.component('base-input', {
 */
 
 Vue.component('sample-component', require('./components/SampleComponent.vue'));
-
-
-
 
 
 /*

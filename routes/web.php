@@ -11,8 +11,15 @@
 |
 */
 
+Route::get('/home', function () {
+
+    return view('sb-admin.index');
+});
+
+
 Route::get('/', function () {
-    return view('index');
+
+    return view('welcome');
 });
 
 /*Auth::routes();
